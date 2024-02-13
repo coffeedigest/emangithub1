@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Genres - دار الکتب</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="genere.html">Genres</a></li>
+            <!-- Add other navigation links as needed -->
+        </ul>
+    </nav>
+
+    <!-- Book Details and Add to Cart Section -->
+    <div class="book-details-container">
+        <img src="assest/b1.jpg" alt="Book 1">
+        <h2>Book Title</h2>
+        <p>Allama iqbal </p>
+        <p>Price: 2000 ruppes</p>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- Cart Summary Section -->
+    <div class="cart-summary-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-item">
+            <img src="assest/b1.jpg" alt="Book 1">
+            <div class="item-details">
+                <p>allama iqbal</p>
+                <p>Quantity: 1</p>
+                <p>Price: 2000 ruppes</p>
+            </div>
+        </div>
+
+        <!-- Add more cart items as needed -->
+
+        <div class="cart-total">
+            <p>Total: 2000 ruppes</p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 دار الکتب. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Cart Operations -->
+    <script>
+        function addToCart() {
+            // Add logic to handle adding to cart
+            alert("Book added to cart!");
+        }
+
+        function checkout() {
+            // Add logic to handle checkout
+            alert("Proceeding to checkout!");
+        }
+    </script>
+
+</body>
+</html>
